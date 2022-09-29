@@ -67,9 +67,9 @@ void IntCtrl_init(const IntCtrl_ConfigType* ConfigPtr)
     */
     
     IntCtl_Number = IntCtrl_Configuration[i].IntCtrl_Interrupt_Number;
-    EnableRegOffset=(IntCtl_Number/REG_LENGTH_BIT)*REG_LENGTH_BYTE;
+    EnableRegOffset=(IntCtl_Number/REG_LENGTH_BIT);
     OffsetBit=IntCtl_Number%REG_LENGTH_BIT;
-    switch(EnableRegOffset/REG_LENGTH_BYTE)
+    switch(EnableRegOffset)
     {
     case 0: SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN0_BASE_OFFSET),OffsetBit); 
     break;
@@ -96,13 +96,13 @@ void IntCtrl_init(const IntCtrl_ConfigType* ConfigPtr)
     
     switch(((IntCtrl_Configuration[i].IntCtrl_Interrupt_Number))%(4))
     {
-    case 0 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTA_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTA_NUM)));
+    case 0 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI4_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI4_BASE_OFFSET )&(INTCTRL_PRIX_INTA_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTA_NUM)));
     break;
-    case 1 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTB_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTB_NUM)));
+    case 1 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI4_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI4_BASE_OFFSET )&(INTCTRL_PRIX_INTB_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTB_NUM)));
     break;
-    case 2 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTC_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTC_NUM)));
+    case 2 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI4_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI4_BASE_OFFSET )&(INTCTRL_PRIX_INTC_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTC_NUM)));
     break;
-    case 3 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTD_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTD_NUM)));
+    case 3 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI4_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI4_BASE_OFFSET )&(INTCTRL_PRIX_INTD_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTD_NUM)));
     break;
     }
   }
