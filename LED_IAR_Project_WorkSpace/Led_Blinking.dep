@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1730891284</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Gptm.c</file>
+            <file>$PROJ_DIR$\Gpt_Lcfg.c</file>
+            <file>$PROJ_DIR$\Gpt_Regs.h</file>
+            <file>$PROJ_DIR$\Dio_Regs.h</file>
+            <file>$PROJ_DIR$\Compiler.h</file>
+            <file>$PROJ_DIR$\cstartup_code.c</file>
+            <file>$PROJ_DIR$\Dio.c</file>
+            <file>$PROJ_DIR$\App.c</file>
+            <file>$PROJ_DIR$\Common_Macros.h</file>
+            <file>$PROJ_DIR$\Dio_Cfg.h</file>
+            <file>$PROJ_DIR$\App.h</file>
+            <file>$PROJ_DIR$\Dio.h</file>
+            <file>$PROJ_DIR$\Dio_PBcfg.c</file>
+            <file>$PROJ_DIR$\IntCtrl.h</file>
+            <file>$PROJ_DIR$\IntCtrl_Regs.h</file>
+            <file>$PROJ_DIR$\Port_Lcfg.c</file>
+            <file>$PROJ_DIR$\Led.c</file>
+            <file>$PROJ_DIR$\Led_Cfg.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Port.h</file>
+            <file>$PROJ_DIR$\Port_Regs.h</file>
+            <file>$PROJ_DIR$\Std_Types.h</file>
+            <file>$PROJ_DIR$\Led.h</file>
+            <file>$PROJ_DIR$\Platform_Types.h</file>
+            <file>$PROJ_DIR$\Port.c</file>
+            <file>$PROJ_DIR$\IntCtrl_Lcfg.c</file>
+            <file>$PROJ_DIR$\IntCtrl_Cfg.h</file>
+            <file>$PROJ_DIR$\Port_Cfg.h</file>
+            <file>$PROJ_DIR$\IntCtrl.c</file>
+            <file>$PROJ_DIR$\Gptm.h</file>
+            <file>$PROJ_DIR$\Gptm_Cfg.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm_registers.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\App.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Gpt_Lcfg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\IntCtrl.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Port.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\IntCtrl_Lcfg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup_code.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Led.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Dio_PBcfg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Gptm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Dio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Port_Lcfg.o</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Gptm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 8 30 21 23 4 2 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Gpt_Lcfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 8 30 21 23 4 10 22 19 27 11 9 20 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup_code.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Dio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21 23 4 11 8 9 20 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\App.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21 23 4 10 22 19 8 27 11 9 20 17 29 30 13 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Dio_PBcfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 21 23 4 8 9 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Port_Lcfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19 8 27 21 23 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19 8 27 21 23 4 11 9 20 22 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 21 23 4 22 19 8 27 11 9 20 17 29 30</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Port.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19 8 27 21 23 4 20 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IntCtrl_Lcfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13 8 26 21 23 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\IntCtrl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13 8 26 21 23 4 14 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 45 33 38 43 40 34 41 35 37 39 42 36 44 46 47 48 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
